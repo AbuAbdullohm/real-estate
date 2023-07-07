@@ -1,0 +1,27 @@
+@font-face{
+    font-family: "Noto Serif";
+    src: url("../fonts/NotoSerifCondensed-Regular.woff")  format("woff"),
+        url("../fonts/NotoSerifCondensed-Regular.woff2")  format("woff2");
+        font-weight: 400;
+}
+
+@font-face{
+    font-family: "Noto Serif";
+    src: url("../fonts/NotoSerifCondensed-SemiBold.woff")  format("woff"),
+        url("../fonts/NotoSerifCondensed-SemiBold.woff2")  format("woff2");
+        font-weight: 600;
+}
+
+@font-face{
+    font-family: "Noto Serif";
+    src: url("../fonts/NotoSerifCondensed-Bold.woff")  format("woff"),
+        url("../fonts/NotoSerifCondensed-Bold.woff2")  format("woff2");
+        font-weight: 700;
+}
+
+@font-face{
+    font-family: "Noto Serif";
+    src: url("../fonts/NotoSerifCondensed-ExtraBold.woff")  format("woff"),
+        url("../fonts/NotoSerifCondensed-ExtraBold.woff2")  format("woff2");
+        font-weight: 900;
+}

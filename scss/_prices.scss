@@ -1,0 +1,135 @@
+.prices {
+  width: 1150px;
+  margin: 50px auto;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      &--text {
+        color: #677071;
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: end;
+
+      &--filter {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 18px;
+        color: #cccfd0;
+        cursor: pointer;
+
+        &:active{
+          color: #772D8B;
+        }
+        &:active .chooser{
+          border-color: #772d8b;
+        }
+      }
+      
+      .chooser {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        border-radius: 50%;
+        border: 1px solid #CCCFD0;
+      }
+
+      &--filter:active::before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #772D8B;
+        border-radius: 50%;
+        margin-left: 4px;
+
+        .chooser{
+          border: 1px solid #772D8B;
+        }
+      }
+    }
+  }
+}
+
+.prices-card {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    width: 320px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+
+    &-img {
+      width: 320px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    &-title {
+      margin-top: 20px;
+    }
+
+    &-location {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #677071;
+    }
+
+    &-price {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    &-services {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #cccfd0;
+    }
+
+    &-btn {
+      margin-top: 20px;
+      width: 320px;
+      height: 50px;
+      font-weight: bold;
+      color: #13a6ba;
+      background-color: #ffffff;
+      border: 2px solid #13a6ba;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    cursor: pointer;
+
+    .slider-style {
+      padding: 20px 10px;
+      border-radius: 5px;
+    }
+
+    &--right {
+      margin-left: 10px;
+      background-color: #772d8b;
+    }
+  }
+}

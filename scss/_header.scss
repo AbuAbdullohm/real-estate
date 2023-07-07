@@ -1,0 +1,42 @@
+.gray-back{
+    width: 100%;
+    background-color: #FBEDDA;
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        width: 70%;
+    }
+}
+
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+
+    &-items{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &__link{
+            color: #021112;
+            font-size: 14px;
+        }
+    }
+}
+
+.header-btn{
+    padding: 15px 30px;
+
+    a{
+        color: #ffffff;
+    }
+}
+

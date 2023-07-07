@@ -1,0 +1,118 @@
+.main{
+    position: relative;
+    width: 70%;
+    margin: 50px auto;
+
+    &-upper{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__title{
+            font-size: 50px;
+            text-align: center;
+            font-weight:bold;
+
+        }
+
+        &__text{
+            margin-top: 30px;
+        }
+    }
+
+    &-card{
+        position: relative;
+        width: 90%;
+        margin: 50px auto;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+
+        &__search{
+            position: relative;
+            width: 100%;
+            padding:20px;
+            
+            &--btn{
+                padding-bottom: 10px;
+                margin: 0 10px 0;
+                position: relative;
+                color: #CCCFD0;
+                border: none;
+                background-color: transparent;
+                
+                
+                &:active,
+                &:focus{
+                    z-index: 5;
+                    color: #000000;
+                    border-radius: 2px;
+                    border-bottom: 3px solid #000000;
+                }
+            }
+        }
+    }
+}
+
+.main-image{
+    width: 100%;
+}
+
+.long-border{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #c7c7c7;
+    top: 49px;
+    z-index: 1;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 30px;
+    
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        .card-info__location,
+        .card-info__property,
+        .card-info__price {
+            display: flex;
+        }
+
+        p{
+            color: #677071;
+            padding-left: 10px;
+        }
+
+        h1{
+            margin: 5px 0;
+        }
+    }
+
+    .card-btn{
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+}
+
+.border{
+    width: 2px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #c7c7c7;
+}
+
